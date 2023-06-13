@@ -19,9 +19,6 @@ const getAllParties = async () => {
   }
 };
 
-
-
-
 // get single party by id
 const getPartyById = async (id) => {
   try {
@@ -43,6 +40,7 @@ const deleteParty = async (id) => {
     console.error(error);
   }
 };
+
 
 // render a single party by id
 const renderSinglePartyById = async (id) => {
@@ -102,8 +100,8 @@ const renderSinglePartyById = async (id) => {
   }
 };
 
-// render all parties
 
+// render all parties
 const renderParties = async (parties) => {
   try {
     partyContainer.innerHTML = '';
@@ -141,8 +139,6 @@ const renderParties = async (parties) => {
     console.error(error);
   }
 };
-
-
 
 
 // init function
